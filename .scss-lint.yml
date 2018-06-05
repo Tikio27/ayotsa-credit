@@ -1,0 +1,16 @@
+scss_files: 'app/assets/stylesheets/**/*.scss'
+
+Linters:
+  EmptyLineBetweenBlocks:
+    enabled: false
+
+  FinalNewline:
+    enabled: false
+
+  SelectorDepth:
+    enabled: true
+    max_depth: 4
+
+  SelectorFormat:
+      enabled: true
+      convention: snake_case

@@ -1,0 +1,38 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - nagual.gemspec
+    - vendor/**/*
+    - db/**/*
+    - tmp/**/*
+    - bin/**/*
+    - log/**/*
+    - config/**/*
+    - Vagrantfile
+Documentation:
+  Enabled: false
+Metrics/LineLength:
+  Max: 120
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: false
+Layout/EmptyLinesAroundModuleBody:
+  Enabled: false
+Layout/EmptyLinesAroundClassBody:
+  Enabled: false
+Layout/FirstParameterIndentation:
+  Enabled: false
+Style/ClassVars:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Include:
+    - lib/**/*.rb
+    - app/**/*.rb
+Metrics/BlockLength:
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - 'spec/**/*.rb'
+    - 'app/admin/*.rb'
+Metrics/MethodLength:
+  Exclude:
+    - 'spec/support/*.rb'

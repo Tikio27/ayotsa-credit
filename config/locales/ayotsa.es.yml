@@ -1,0 +1,514 @@
+es:
+  grading:
+    notes: Calificaciones
+    period: Bimestre
+    subject: Materia
+    abscenses: Inasistencias
+    prescense: Asistencias
+    english:
+      10: E
+      8: VG
+      6: G
+      5: R
+      3: IP
+    spanish:
+      10: E
+      9: MB
+      7: B
+      5: R
+      4: EP
+  active_admin_paranoia:
+    archived: Inactivo
+    non_archived: Activo
+    restore: Recuperar
+    restore_model: Recuperar
+    restore_confirmation: Seguro que deseas reactivarlo
+  student_notes: Boleta
+  description: Descripción
+  download: Descargar
+  academic_records: Control Escolar
+  admision_process: Proceso de Admision
+  total_students: Total de Alumnos
+  incidents: Incidencias
+  scholarships: Becas
+  admin: Administración
+  finance: Finanzas
+  students: Estudiantes
+  inventory: Inventario
+  date: Fecha
+  sales: Ventas
+  roles_hint: Analista = 1. Asesor = 2. Director = 4
+  view: Ver
+  send: Enviar
+  mail_sent: Correo Enviado!
+  debt_report:
+    term: Ciclo
+    campus: Sección
+    group: Grupo
+    grand_total: GRAN TOTAL
+    name: Nombre
+    description: Concepto
+    without_campus: Sin Sección
+  sales_report:
+    date_range: Rango de fechas
+    name: Descripción
+    size: Talla
+    quantity: Cantidad
+    unit_cost: Costo Unitario
+    unit_price: Precio Unitario
+    price: Importe
+    cost: Costo
+    profit: Utilidad
+    products_sold: Productos Vendidos
+  cash_drawer_report:
+    date: Fecha
+    income: Comprobantes de ingresos
+    name: Método de Pago
+    subtotal: Total
+    range: Folios Expedidos
+    payment_type_card: PAGO CON TARJETA
+    payment_type_cash: EFECTIVO
+    payment_type_other: OTROS
+  master_report:
+    date: Fecha
+    totals: Totales
+    subtotal: Total
+    range: Folios Expedidos
+    orders: Ordenes
+    quotas: Cuotas
+    from_date_filter: Desde
+    to_date_filter: Hasta
+    payment_method_filter: Método de Pago
+    campus_filter: Sección
+    payment_method: POR METODO DE PAGO
+    type: POR TIPO DE INGRESO
+    campus: POR SECCION
+    grand_total: TOTAL GENERAL
+    registration_number: Matricula
+    student_name: Nombre
+    section: Sección
+    student_group: Grupo
+    concept: Concepto
+    payment_type: Método de Pago
+    payment_deposits: Abonos
+    payment_id: Folio
+    amount: Total
+    invoice: POR FACTURA
+    no_invoice: No Facturado
+    has_invoice: Facturado
+    without_campus: Sin Sección
+  invoice_report:
+    range: Facturas Generadas
+    name: Reporte de Facturas
+    totals: Totales por Sección
+    subtotal: Total
+    from_date_filter: Desde
+    to_date_filter: Hasta
+    student_name_filter: Nombre de Estudiante
+    campus_filter: Sección
+    date: Fecha
+    campus: Sección
+    group: Grupo
+    student: Nombre del Alumno
+    description: Concepto(s)
+    total: Total
+    view: Consultar
+    payment: Pago
+    payer: Cliente
+    cancelled: Cancelada
+    grand_total: TOTAL GENERAL
+  payment_methods:
+    ajuste: Ajuste
+    payroll: Descuento de nómina
+    transfer: Transferencia
+    deposit: Depósito bancario
+    check: Cheque
+    cash: Efectivo
+    credit_card: Tarjeta de crédito
+    debit_card: Tarjeta de débito
+    zefe: ZEFE
+  cfdi_types:
+    P01: Por definir
+    G03: Gastos en General
+    D10: Pagos por servicios educativos
+  actions:
+    edit: Editar
+    view_orders: Ver
+    view_charges: Ver
+    view_incidents: Ver
+    create_incident: Nuevo
+    create_order: Crear
+    create_charge: Crear
+    edit_students: Asignación de estudiantes
+    edit_courses: Cursos
+    find: Buscar
+    create_invoice: Facturar
+    pdf_invoice: PDF
+    xml_invoice: XML
+    email_invoice: Enviar por correo
+    cancel_invoice: Cancelar
+    invoice_email_sent: El correo fue enviado exitosamente
+    invoice_cancelled: La factura fue cancelada exitosamente
+    invoice_created: La factura fue creada exitosamente
+    invoice_failed: La factura no pudo crearse correctamente
+    new_charge: Nuevo Cargo
+    pay: Pagar
+    view_payments: Ver
+    create_payment: Crear
+    invoice_cancelled: (Factura cancelada)
+    edit_family: Editar Familia
+    delete_charge: Eliminar cargo
+    edit_charge: Editar cargo
+    confirm_cancel_charge: ¿Estás seguro de que quieres cancelar este cargo?
+    confirm_cancel_payment: ¿Estás seguro de que quieres cancelar este pago?
+    confirm_cancel_payment_invoice: ¿Estás seguro de que quieres cancelar este pago y su factura?
+    add_tuition: Añadir Colegiatura
+    total_students: Total de Alumnos
+    commision_charged: Cargo por método de pago
+    surcharge: Recargo
+    cancel_payment: Cancelar
+    edit_payment: Editar pago
+    save: Guardar
+    payment_cancelled: Pago cancelado exitosamente
+    payment_error: Error al cancelar el pago
+    payment_updated_error: Error al actualizar pago
+    payment_updated_success: El pago fue actualizado exitosamente
+    term_change: Se realizará el cambio de ciclo. Antes de continuar asegurate que todos los grupos cuenten con sus cursos, maestros y alumnos. El proceso tardara unos segundos. ¿Deseas continuar?
+    term_change_error: Ocurrio un error al cambiar de ciclo
+    term_changed: El cambio de ciclo se realizó correctamente
+    teacher_created: El maestro fue creado correctamente
+    teacher_created_failed: El maestro no pudo crearse correctamente
+    teacher_updated: El maestro fue actualizado correctamente
+    teacher_updated_failed: El maestro no pudo actualizarse correctamente
+  errors:
+    create_invoice: Error al generar factura
+    send_invoice: Error al enviar factura por correo
+    send_email_invoice: Error al enviar factura por correo, favor de reenviarlo manualmente
+    student_invalid_invoice_info: Estudiante no cuenta con campos requeridos para facturar
+    payer_invalid: Favor de seleccionar un cliente
+    account_invalid: El numero de cuenta debe ser de 4 numeros de longitud
+    payment_diff_campus: No puedes hacer un pago a secciones diferentes, favor de validar que los cargos del pago sean de la misma sección
+  activerecord:
+    models:
+      tuition:
+        one: Colegiatura
+        other: Colegiaturas
+      user:
+        one: Usuario
+        other: Usuarios
+      incident:
+        one: Incidencia
+        other: Incidencias
+      teacher:
+        one: Maestro
+        other: Maestros
+      student:
+        one: Estudiante
+        other: Estudiantes
+      family_member:
+        one: Miembro de la Familia
+        other: Miembros de la familia
+      family:
+        one: Familia
+        other: Familias
+      campus:
+        one: Sección
+        other: Secciones
+      term:
+        one: Ciclo
+        other: Ciclos
+      group:
+        one: Grupo
+        other: Grupos
+      grade:
+        one: Grado
+        other: Grados
+      product:
+        one: Producto
+        other: Productos
+      payment:
+        one: Pago
+        other: Pagos
+      supplier:
+        one: Proveedor
+        other: Proveedores
+      egress:
+        one: Egreso
+        other: Egresos
+      order:
+        one: Orden
+        other: Ordenes
+      line_item:
+        one: Producto
+        other: Productos
+      subject:
+        one: Materia
+        other: Materias
+      charge:
+        one: Cargo
+        other: Cargos
+      student_group:
+        one: Estudiante a Grupo
+        other: Estudiantes
+      course:
+        one: Curso
+        other: Cursos
+      payer:
+        one: Cliente
+        other: Clientes
+      relative:
+        one: Tutor
+        other: Tutores
+      payment_deposit:
+        one: Abono a cargo
+        other: Abonos a cargo
+      invoice:
+        one: Factura
+        other: Facturas
+      quota:
+        one: Cuota
+        other: Cuotas
+    attributes:
+      egress:
+        payment_date: Fecha
+        supplier: Proveedor
+        concept: Concepto
+        amount: Cantidad
+      supplier:
+        name: Nombre
+        address: Dirección
+        phone: Teléfono
+      user:
+        current_sign_in_at: Último acceso
+        sign_in_count: Accesos
+        password_confirmation: Confirmar password
+        roles_mask: Roles
+        building: Plantel
+      incident:
+        student: Estudiante
+        grade: Grupo
+        description: Descripción
+        occured: Fecha de suceso
+        attended_by: Maestra que lo atendió
+        phone_contact: Notificación Telefónica
+        medical_attention: Atención Medica
+        actions_taken: Atención Recibida
+        last_report_sent: Email Enviado
+      teacher:
+        first_name: Nombre
+        last_name: Apellidos
+        spanish: Español
+        english: Inglés
+      student:
+        name: Nombre
+        security_number: Número de seguridad
+        registration_number: Matrícula
+        date_of_birth: Fecha de nacimiento
+        place_of_birth: Lugar de nacimiento
+        age: Edad
+        gender: Género
+        address: Domicilio
+        authorization_notes: Personas autorizadas a recoger
+        curp: CURP
+        starting_term_id: Ciclo inicial
+        starting_grade_id: Grado inicial
+        birth_certificate: Acta de nacimiento (Original y Copia)
+        curp_document: CURP
+        proof_of_address: Comprobante de domicilio
+        debt_free: Carta de no adeudo
+        solvency_letter: Carta de solvencia
+        sep_partial_certificate: Boleta parcial (en caso de ciclo iniciado)
+        sep_certificate: Boleta/Certificado SEP
+        medical_history: Historial clínico
+        photos: Fotos
+        exit_permit_form: Formato autorización de salida EMME
+        admission_application: Solicitud ingreso / Actualización de datos
+        ife_authorized: IFE personas autorizadas
+        agreement_form: Formato Acuerdo
+        privacy_notice: Aviso de privacidadd
+        vaccine_certificate: Cartilla de vacunación.
+        extra_certificate: Constancia de acreditación extraordinarios
+        family: Familia
+        siblings: Hermanos
+        groups: Grupos
+        tuition: Colegiatura
+        discount: Descuento
+        discount_reason: Razón del Descuento
+        documents: Documentos
+        current_group: Grupo Actual
+        bimester: Bimestre
+        last_report_sent: Enviado
+        email_report_sent: Las Calificaciones han sido enviadas.
+        charge_hours: Guarderia
+        current_hours: Horas por Cobrar
+      attendance:
+        abscense_1: Inasistencias
+        total_days_1: Días en el periodo
+      payer:
+        rfc: RFC
+        name: Nombre
+        street: Calle
+        number: Número
+        neighborhood: Colonia
+        municipality: Municipio
+        state: Estado
+        zipcode: Código Postal
+        email: Correo electrónico
+      family:
+        code: Código
+      campus:
+        name: Nombre
+      term:
+        name: Nombre
+        current: Actual
+      group:
+        name: Nombre
+        grade: Grado
+        students: Estudiantes
+        term: Ciclo
+        campus: Sección
+        report: Reporte de Materias
+        all_subjects: Todas
+        sep_subjects: SEP
+        csv_subjects: Descargar(csv)
+      product:
+        name: Nombre
+        code: Código
+        description: Descripción
+        campus: Sección
+        price: Precio
+        cost: Costo
+        size: Talla
+        quantity: Cantidad
+      order:
+        created_at: Fecha de creación
+        total: Total
+        student: Estudiante
+        line_items: Productos
+      line_item:
+        product: Producto
+        order: Orden
+        unit_price: Precio Unitario
+        quantity: Cantidad
+        price: Precio
+      family_member:
+        student_id: Estudiante
+      charge:
+        term: Ciclo
+        description: Concepto
+        chargable: Cuotas
+        status: Estatus
+        chargeable: Orden
+        student: Estudiante
+        payment_method: Tipo de pago
+        payment_date: Fecha de pago
+        note: Observaciones
+        debt: Saldo
+        actions: Acciones Disponibles
+        tuition: Colegiatura
+        uniforms: Uniformes
+        application_date: Fecha de Aplicación
+        campus: Sección
+      student_group:
+        student: Estudiante
+        group: Grupo
+      grade:
+        name: Nombre
+        campus: Sección
+      subject:
+        name: Nombre
+        sep: SEP
+        grade: Grado
+        grading: Idioma
+        category: Categoría
+      course:
+        name: Nombre
+        teacher: Maestro
+        subject: Materia
+        notes: Calificaciones
+      payment:
+        actions: Acciones Disponibles
+        student: Estudiante
+        payer: Cliente
+        payment_method: Tipo de pago
+        payment_date: Fecha
+        payment_deposits: Abonos
+        deposits: Abonos
+        invoice: Factura
+        note: Observaciones
+        campus: Plantel
+      payment_deposit:
+        charge: Cargo
+        amount: Cantidad
+      relative:
+        name: Nombre
+        email: Email
+        phone: Teléfono
+        mobile: Celular
+        relation: Parentesco
+      invoice:
+        view: Consultar
+        payer_id: Cliente
+        payer: Cliente
+        created_at: Fecha
+        payment: Pago
+        cancelled: Cancelada
+        bank: Banco
+        cfdi_type: Uso de CFDI
+        account: Cuenta
+        payment_type: Tipo de pago
+      quota:
+        code: Código
+        name: Nombre
+        campus: Sección
+        price: Precio
+      tuition:
+        group_code: Grupo
+        name: Nombre
+        amount: Cantidad
+      note:
+        term: Ciclo
+        student: Estudiante
+        course: Materia
+        bimester_1: I
+        bimester_2: II
+        bimester_3: III
+        bimester_4: IV
+        bimester_5: V
+        averge: Promedio
+        category: Categoria
+    errors:
+      models:
+        order:
+          attributes:
+            line_items:
+              max_exceeded: no puede ser mayor a %{max}
+        student_group:
+          attributes:
+            student_id:
+              taken: ya está asignado a otro grupo
+        line_item:
+          attributes:
+            quantity:
+              out_of_stock: no hay suficiente en inventario
+        payment_deposit:
+          attributes:
+            amount:
+              greater_than_charge_total: cantidad mayor al monto pendiente
+  active_admin:
+    dashboard_welcome:
+      welcome: Bienvenido a Colegio Camelot
+    scopes:
+      with_scolarship: Becados
+      with_discount: Con Descuento
+      daycare: Guarderia
+    filters:
+      buttons:
+        filter: "Mostrar Filtros"
+        clear: "Eliminar Filtros"
+    batch_actions:
+      button_label: "Enviar a seleccionados"
+      labels:
+        send_mail: Enviar boletas de alumnos
+    member_actions:
+        show_grades_report: Mostrar Reporte de Calificaciones
