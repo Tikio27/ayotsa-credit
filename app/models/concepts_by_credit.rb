@@ -1,0 +1,2 @@
+class ConceptsByCredit < ApplicationRecord
+end

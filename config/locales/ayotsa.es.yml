@@ -1,42 +1,15 @@
 es:
-  grading:
-    notes: Calificaciones
-    period: Bimestre
-    subject: Materia
-    abscenses: Inasistencias
-    prescense: Asistencias
-    english:
-      10: E
-      8: VG
-      6: G
-      5: R
-      3: IP
-    spanish:
-      10: E
-      9: MB
-      7: B
-      5: R
-      4: EP
   active_admin_paranoia:
     archived: Inactivo
     non_archived: Activo
     restore: Recuperar
     restore_model: Recuperar
     restore_confirmation: Seguro que deseas reactivarlo
-  student_notes: Boleta
   description: Descripción
   download: Descargar
-  academic_records: Control Escolar
-  admision_process: Proceso de Admision
-  total_students: Total de Alumnos
-  incidents: Incidencias
-  scholarships: Becas
   admin: Administración
-  finance: Finanzas
-  students: Estudiantes
-  inventory: Inventario
+  clients: Clientes
   date: Fecha
-  sales: Ventas
   roles_hint: Analista = 1. Asesor = 2. Director = 4
   view: Ver
   send: Enviar
@@ -133,41 +106,12 @@ es:
     D10: Pagos por servicios educativos
   actions:
     edit: Editar
-    view_orders: Ver
-    view_charges: Ver
-    view_incidents: Ver
-    create_incident: Nuevo
-    create_order: Crear
-    create_charge: Crear
-    edit_students: Asignación de estudiantes
-    edit_courses: Cursos
+    view_clients: Ver
+    view_credits: Ver
+    create_client: Nuevo
+    create_credit: Crear
     find: Buscar
-    create_invoice: Facturar
-    pdf_invoice: PDF
-    xml_invoice: XML
-    email_invoice: Enviar por correo
-    cancel_invoice: Cancelar
-    invoice_email_sent: El correo fue enviado exitosamente
-    invoice_cancelled: La factura fue cancelada exitosamente
-    invoice_created: La factura fue creada exitosamente
-    invoice_failed: La factura no pudo crearse correctamente
-    new_charge: Nuevo Cargo
     pay: Pagar
-    view_payments: Ver
-    create_payment: Crear
-    invoice_cancelled: (Factura cancelada)
-    edit_family: Editar Familia
-    delete_charge: Eliminar cargo
-    edit_charge: Editar cargo
-    confirm_cancel_charge: ¿Estás seguro de que quieres cancelar este cargo?
-    confirm_cancel_payment: ¿Estás seguro de que quieres cancelar este pago?
-    confirm_cancel_payment_invoice: ¿Estás seguro de que quieres cancelar este pago y su factura?
-    add_tuition: Añadir Colegiatura
-    total_students: Total de Alumnos
-    commision_charged: Cargo por método de pago
-    surcharge: Recargo
-    cancel_payment: Cancelar
-    edit_payment: Editar pago
     save: Guardar
     payment_cancelled: Pago cancelado exitosamente
     payment_error: Error al cancelar el pago
@@ -190,90 +134,26 @@ es:
     payment_diff_campus: No puedes hacer un pago a secciones diferentes, favor de validar que los cargos del pago sean de la misma sección
   activerecord:
     models:
-      tuition:
-        one: Colegiatura
-        other: Colegiaturas
+      client:
+        one: Cliente
+        other: Clientes
       user:
         one: Usuario
         other: Usuarios
-      incident:
-        one: Incidencia
-        other: Incidencias
-      teacher:
-        one: Maestro
-        other: Maestros
-      student:
-        one: Estudiante
-        other: Estudiantes
-      family_member:
-        one: Miembro de la Familia
-        other: Miembros de la familia
-      family:
-        one: Familia
-        other: Familias
-      campus:
-        one: Sección
-        other: Secciones
-      term:
-        one: Ciclo
-        other: Ciclos
-      group:
-        one: Grupo
-        other: Grupos
-      grade:
-        one: Grado
-        other: Grados
-      product:
-        one: Producto
-        other: Productos
-      payment:
-        one: Pago
-        other: Pagos
-      supplier:
-        one: Proveedor
-        other: Proveedores
-      egress:
-        one: Egreso
-        other: Egresos
-      order:
-        one: Orden
-        other: Ordenes
-      line_item:
-        one: Producto
-        other: Productos
-      subject:
-        one: Materia
-        other: Materias
-      charge:
-        one: Cargo
-        other: Cargos
-      student_group:
-        one: Estudiante a Grupo
-        other: Estudiantes
-      course:
-        one: Curso
-        other: Cursos
-      payer:
-        one: Cliente
-        other: Clientes
-      relative:
-        one: Tutor
-        other: Tutores
-      payment_deposit:
-        one: Abono a cargo
-        other: Abonos a cargo
-      invoice:
-        one: Factura
-        other: Facturas
-      quota:
-        one: Cuota
-        other: Cuotas
+      credit:
+        one: Credito
+        other: Creditos
     attributes:
-      egress:
-        payment_date: Fecha
-        supplier: Proveedor
-        concept: Concepto
-        amount: Cantidad
+      client:
+        name: Nombre
+        address: Direccion
+        phone_number: Telefono
+        account_number: Número de cuenta
+        date_of_birth: Fecha de Nacimiento
+        age: Edad
+        rfc: RFC
+        employer: Lugar de Trabajo
+        work_seniority: Antiguedad en el trabajo
       supplier:
         name: Nombre
         address: Dirección
@@ -283,7 +163,6 @@ es:
         sign_in_count: Accesos
         password_confirmation: Confirmar password
         roles_mask: Roles
-        building: Plantel
       incident:
         student: Estudiante
         grade: Grupo
@@ -497,7 +376,7 @@ es:
               greater_than_charge_total: cantidad mayor al monto pendiente
   active_admin:
     dashboard_welcome:
-      welcome: Bienvenido a Colegio Camelot
+      welcome: Bienvenido al Sistema de Analisis de Credito
     scopes:
       with_scolarship: Becados
       with_discount: Con Descuento

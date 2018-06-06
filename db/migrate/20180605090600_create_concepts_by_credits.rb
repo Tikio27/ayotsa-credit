@@ -1,6 +1,6 @@
-class CreateConceptsByCredit < ActiveRecord::Migration[5.1]
+class CreateConceptsByCredits < ActiveRecord::Migration[5.1]
   def change
-    create_table :concepts_by_credit do |t|
+    create_table :concepts_by_credits do |t|
       t.belongs_to :credit, foreign_key: true
       t.belongs_to :client, foreign_key: true
       t.belongs_to :concept, foreign_key: true

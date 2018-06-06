@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2018_06_05_101627) do
 
-  create_table "amortization", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "amortizations", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "client_id"
     t.bigint "credit_id"
     t.integer "payment_number"
@@ -23,13 +23,12 @@ ActiveRecord::Schema.define(version: 2018_06_05_101627) do
     t.decimal "remainder", precision: 8, scale: 2
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["client_id"], name: "index_amortization_on_client_id"
-    t.index ["credit_id"], name: "index_amortization_on_credit_id"
+    t.index ["client_id"], name: "index_amortizations_on_client_id"
+    t.index ["credit_id"], name: "index_amortizations_on_credit_id"
   end
 
   create_table "clients", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
-    t.string "last_name"
     t.string "address"
     t.string "phone_number"
     t.string "account_number"
@@ -38,27 +37,20 @@ ActiveRecord::Schema.define(version: 2018_06_05_101627) do
     t.string "rfc"
     t.string "employer"
     t.integer "work_seniority"
-    t.boolean "payment_note"
-    t.boolean "ife"
-    t.boolean "proof_of_address"
-    t.boolean "curp_doc"
-    t.boolean "work_certificate"
-    t.boolean "id_copy"
-    t.boolean "credit_application_completed"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "comments_by_credit", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "comments_by_credits", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "credit_id"
     t.bigint "client_id"
     t.bigint "user_id"
     t.text "comment"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["client_id"], name: "index_comments_by_credit_on_client_id"
-    t.index ["credit_id"], name: "index_comments_by_credit_on_credit_id"
-    t.index ["user_id"], name: "index_comments_by_credit_on_user_id"
+    t.index ["client_id"], name: "index_comments_by_credits_on_client_id"
+    t.index ["credit_id"], name: "index_comments_by_credits_on_credit_id"
+    t.index ["user_id"], name: "index_comments_by_credits_on_user_id"
   end
 
   create_table "concepts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -67,7 +59,7 @@ ActiveRecord::Schema.define(version: 2018_06_05_101627) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "concepts_by_credit", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+  create_table "concepts_by_credits", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "credit_id"
     t.bigint "client_id"
     t.bigint "concept_id"
@@ -76,9 +68,9 @@ ActiveRecord::Schema.define(version: 2018_06_05_101627) do
     t.integer "total"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["client_id"], name: "index_concepts_by_credit_on_client_id"
-    t.index ["concept_id"], name: "index_concepts_by_credit_on_concept_id"
-    t.index ["credit_id"], name: "index_concepts_by_credit_on_credit_id"
+    t.index ["client_id"], name: "index_concepts_by_credits_on_client_id"
+    t.index ["concept_id"], name: "index_concepts_by_credits_on_concept_id"
+    t.index ["credit_id"], name: "index_concepts_by_credits_on_credit_id"
   end
 
   create_table "credits", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -156,14 +148,14 @@ ActiveRecord::Schema.define(version: 2018_06_05_101627) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
-  add_foreign_key "amortization", "clients"
-  add_foreign_key "amortization", "credits"
-  add_foreign_key "comments_by_credit", "clients"
-  add_foreign_key "comments_by_credit", "credits"
-  add_foreign_key "comments_by_credit", "users"
-  add_foreign_key "concepts_by_credit", "clients"
-  add_foreign_key "concepts_by_credit", "concepts"
-  add_foreign_key "concepts_by_credit", "credits"
+  add_foreign_key "amortizations", "clients"
+  add_foreign_key "amortizations", "credits"
+  add_foreign_key "comments_by_credits", "clients"
+  add_foreign_key "comments_by_credits", "credits"
+  add_foreign_key "comments_by_credits", "users"
+  add_foreign_key "concepts_by_credits", "clients"
+  add_foreign_key "concepts_by_credits", "concepts"
+  add_foreign_key "concepts_by_credits", "credits"
   add_foreign_key "credits", "clients"
   add_foreign_key "differences", "clients"
   add_foreign_key "documents", "clients"

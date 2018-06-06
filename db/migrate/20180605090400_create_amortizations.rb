@@ -1,6 +1,6 @@
-class CreateAmortization < ActiveRecord::Migration[5.1]
+class CreateAmortizations < ActiveRecord::Migration[5.1]
   def change
-    create_table :amortization do |t|
+    create_table :amortizations do |t|
       t.belongs_to :client, foreign_key: true
       t.belongs_to :credit, foreign_key: true
       t.integer :payment_number

@@ -1,0 +1,2 @@
+class CommentsByCredit < ApplicationRecord
+end

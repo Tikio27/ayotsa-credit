@@ -15,6 +15,7 @@ class Ability
 
   def default_abilities
     can :manage, ActiveAdmin::Page, name: 'Dashboard'
+    can :manage, Client
   end
 
   def admin_abilities
